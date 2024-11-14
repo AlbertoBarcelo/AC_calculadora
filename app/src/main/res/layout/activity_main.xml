@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center_horizontal"
+    android:background="#D2C3C3">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#EF039A"
+        android:padding="16dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="268dp"
+            android:layout_height="198dp"
+            android:layout_rowSpan="4"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/gradient_drawable"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/button_memory_store"
+            style="@style/CustomButtonStyle"
+            android:text="M"
+            android:layout_margin="1dp"
+            android:layout_column="3"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:id="@+id/button_memory_recall"
+            style="@style/CustomButtonStyle"
+            android:text="MR"
+            android:layout_margin="1dp"
+            android:layout_column="3"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:id="@+id/button_clear"
+            style="@style/CustomButtonStyle"
+            android:textColor="@color/red"
+            android:layout_margin="1dp"
+            android:layout_column="3"
+            android:layout_gravity="fill"
+            android:text="C" />
+        <Button
+            android:id="@+id/button_backspace"
+            style="@style/CustomButtonStyle"
+            android:text="⌫"
+            android:layout_margin="1dp"
+            android:layout_column="3"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/button_subtract"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button_0"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/button_equals"
+            android:layout_margin="1dp"
+            style="@style/CustomButtonStyle"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:text="=" />
+
+    </GridLayout>
+
+</LinearLayout>
